@@ -19,7 +19,7 @@ PYTHON = /bin/python3 /home/dorr/Desktop/MyFiles/BA3/Project/
 C_FILE = Code/project.c
 
 # Specify the name of your Python file
-PYTHON_FILE =Code/project.py
+PYTHON_FILE = Code/project.py
 
 ### ------ Default target -> order in which you want the files to be run this is what will actually happen in your terminal ------ ###
 all: compile_c run_c_executable run_python clean
@@ -34,7 +34,7 @@ run_c_executable: compile_c
 
 ### --- Target to run the Python files --- ###
 run_python: $(basename $(C_FILE))
-	$(PYTHON)$(PYTHON_FILE)
+	$(PYTHON) $(PYTHON_FILE)
 	
 # Clean target to remove compiled files
 clean:
